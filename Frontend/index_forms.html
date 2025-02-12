@@ -1,0 +1,130 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="css/Style_forms.css">
+</head>
+<body>
+    <div class="forms">
+        <header class="forms_header">
+            <button class="button_back" onclick="location.href='index_principal.html'">
+                <svg class="bi bi-arrow-left-short" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                </svg>
+            </button>
+            <h2 class="forms_h2">Register</h2>
+        </header>
+
+        <form action="#" method="POST">
+            <div class="space">
+                <label class="label_name" for="nombre">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="space">
+                <label class="label_email" for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="space">
+                <label for="birthday">Date of Birth:</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div class="space">
+                <label class="label_password" for="password">Password:</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <div class="space">
+                <label class="label_language" for="native_language">Language you speak:</label>
+                <select id="native_language" name="native_language" required>
+                    <option value="" disabled selected>Choose your language</option>
+                    <option value="español">Español</option>
+                    <option value="ingles">Inglés</option>
+                </select>
+            </div>
+
+            <div class="space">
+                <label class="label_language" for="language_know">Language you want to learn:</label>
+                <select id="language_know" name="language_know" required>
+                    <option value="" disabled selected>Choose the language</option>
+                    <option value="español">Español</option>
+                    <option value="ingles">Inglés</option>
+                </select>
+            </div>
+            
+            <div class="space">
+                <label class="label_skills">Evaluate your skills in the language you want to learn (left being 0 and right being 5):</label>
+                <div class="skills">
+                    <div class="skill">
+                        <label for="writing">Writing:</label>
+                        <input type="range" id="writing" name="writing" min="0" max="5">
+                    </div>
+                    <div class="skill">
+                        <label for="reading">Reading:</label>
+                        <input type="range" id="reading" name="reading" min="0" max="5">
+                    </div>
+                    <div class="skill">
+                        <label for="speak">Speaking:</label>
+                        <input type="range" id="speak" name="speak" min="0" max="5">
+                    </div>
+                    <div class="skill">
+                        <label for="comprehension">Auditory Comprehension:</label>
+                        <input type="range" id="comprehension" name="comprehension" min="0" max="5">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space">
+                <label class="label_interests">interests:</label>
+                <div class="interests">
+                    <button class="interests_button" type="button">
+                    <span class="icon">🎵</span> Music
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">⚽</span> Sports
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">📚</span> Reading
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">🎨</span> Art
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">🍳</span> Cook
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">🎮</span> Video Games 
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">🎥</span> Cinema
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">👗</span> Fashion
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">💃</span> Dance
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">✈️</span> Travel
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">💻</span> Technology
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">📷</span> Photography
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">🏋️‍♂️</span> Gym
+                    </button>
+                    <button class="interests_button" type="button">
+                        <span class="icon">⚙️</span> Other
+                    </button>
+                </div>
+            </div>
+            <div class="space">
+                <button class="send_button" type="button" id="registerButton" onclick="location.href='index_match.html'">Log in</button>
+            </div>
+        </form>
+    </div>
+    <script src="Js/click.js"></script>
+</body>
+</html>

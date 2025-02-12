@@ -1,0 +1,143 @@
+body {
+    font-family: 'Pacific', cursive;
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#6970f799 0.5px, transparent 0.5px), radial-gradient(#858bfc 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    color: #333;
+    /* background: linear-gradient(90deg, rgba(252,255,140,1) 0%, rgba(118,109,246,1) 50%, rgba(105,235,86,1) 100%); */
+    /* background: url(../Img/Banderas.jpg) center / cover fixed; */
+}
+.forms{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 560px;
+}
+    .forms_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+        .button_back{
+            position: absolute;
+            left: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+        .button_back:hover {
+            transform: scale(1.1);
+        }
+    .forms_h2 {
+        text-align: center;
+        color: #444444;
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .space{
+        margin-bottom: 20px;
+    }
+        .label_name, .label_email, .label_password, .label_language, .label_interests, .label_skills{
+            display: block;
+            color: #555555;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333333;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        .skills{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .skill{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .skill label{
+            flex: 1;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #555555;
+        }
+        .skill input[type="range"]{
+            flex: 2;
+            margin-right: 50px;
+        }
+
+    .interests{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+        .interests_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border: 2px solid #766df6;
+            border-radius: 8px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: rgba(118,109,246,1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Pacific', cursive;
+        }
+        .icon {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        .interests_button:hover {
+            background-color:rgba(118,109,246,1);
+            transform: scale(1.05);
+            color: #fff
+        }
+        .interests_button.selected {
+            background-color: #766df6;
+            color: white;
+        }
+
+    .send_button{
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(118,109,246,1);
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .send_button:hover {
+        background-color: rgb(94, 83, 245);
+    }
+
+
